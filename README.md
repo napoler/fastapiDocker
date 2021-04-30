@@ -1,4 +1,26 @@
-# Jekyll GitBook
+# FastApi Docker
+
+
+
+## 构建命令
+
+```
+# 构建
+docker build -t myimage .
+
+# 启动容器
+
+docker run -d --name mycontainer -p 80:80 myimage
+# docker run -d -p 8094:80 fastapiner
+```
+docker save fastapiner:latest > ../fastapinerv01.tar
+
+docker load < ../fastapinerv01.tar
+
+
+
+更多文档参考 https://fastapi.tiangolo.com/deployment/docker/
+https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
 
 Make Jelly site have a GitBook look!
 
